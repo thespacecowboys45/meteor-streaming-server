@@ -1,0 +1,28 @@
+<head>
+  <title>streaming-server</title>
+</head>
+
+<body>
+  <h1>Streaming Server.  Written in Meteor!</h1>
+
+   {{> hello}}
+</body>
+
+<template name="hello">
+  <button class="counter">Inc Counter</button>
+  <input type="submit" class="listen" value="Start listener"/>
+  <input type="submit" class="httprequest" value="Make HTTP Request"/>
+  <input type="submit" class="connect" value="Connect to server"/>
+  <input type="submit" class="sayhello" value="Say Hello"/>
+  <input type="submit" class="disconnect" value="Disconnect"/><br />
+  <input type="submit" class="updateData" value="Update Data"/>
+  <input type="submit" class="debug" value="Debug"/>
+  <p>You've pressed the button {{counter}} times.</p>
+  <p>Data: {{data.value}}.</p>
+  <p>Text: {{data.text}}.</p>
+  <!-- 
+  <a href="nextPage.html">Goto the next page - check out IronRouter, and FlowRouter</a>
+  <a href="{{pathFor route='nextPage'}}"> next page</a>
+  -->
+  Server Response:<textarea id="serverresponse" style="width:400px; height:100px;">Server output here...</textarea>
+</template>
